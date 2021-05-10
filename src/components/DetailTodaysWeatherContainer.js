@@ -38,7 +38,7 @@ const DetailTodaysWeatherContainer = ({ weatherData }) => {
       </div>
       <div className='DetailTodaysWeatherContainer-visibility'>
         <p>Chance of Rain</p>
-        <h1>{(weatherData.daily[0].pop)*100} %</h1>
+        <h1>{((weatherData.daily[0].pop)*100).toFixed(0)} %</h1>
       </div>
       <div className='DetailTodaysWeatherContainer-uvindex'>
         <p>UV INDEX</p>
