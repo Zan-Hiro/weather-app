@@ -1,0 +1,68 @@
+.WeeklyWeatherContainer{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 50px;
+}
+
+table {
+  width: 100%;
+}
+
+th{
+color: #6c757d;
+font-size: 13px;
+line-height: 19px;
+border-bottom: 1px solid #DFE2E7;
+}
+
+td{
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #DFE2E7;
+}
+
+@media only screen and (max-width:570px){
+  th{
+    font-size: 0.6rem;
+  }
+}
+
+@media only screen and (max-width:480px){
+  .th-chanceofrain,
+  .th-humidity,
+  .td-chanceofrain,
+  .td-humidity {
+    display: none;
+  }
+  table {
+    font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width:330px){
+  table {
+    font-size: 0.3rem;
+  }
+  .weather-icon{
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media only screen and (max-width:280px){
+  table {
+    font-size: 1rem;
+  }
+  .weather-icon{
+    width: 60px;
+    height: 60px;
+  }
+  .th-max-temp,
+  .th-min-temp,
+  .td-max-temp,
+  .td-min-temp
+   {
+    display: none;
+  }
+}

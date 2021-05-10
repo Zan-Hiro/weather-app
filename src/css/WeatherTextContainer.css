@@ -1,0 +1,12 @@
+.WeatherTextContainer {
+  display: flex;
+  justify-content: center;
+  margin: 48px 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .WeatherTextContainer {
+    display: none;
+  }
+}

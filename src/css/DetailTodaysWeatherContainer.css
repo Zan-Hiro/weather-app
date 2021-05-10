@@ -1,0 +1,27 @@
+.DetailTodaysWeatherContainer {
+	background-color: #343b40;
+	color: white;
+	display: grid;
+	grid-template-columns: repeat(5, auto);
+	grid-gap: 20px;
+	padding: 50px;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.DetailTodaysWeatherContainer h1 {
+	font-size: 20px;
+	line-height: 24px;
+}
+
+.DetailTodaysWeatherContainer p {
+	color: #6c757d;
+	line-height: 19px;
+	font-size: 13px;
+}
+
+@media only screen and (max-width:768px){
+  .DetailTodaysWeatherContainer {
+    display: none;
+  }
+}
